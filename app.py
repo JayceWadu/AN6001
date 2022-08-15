@@ -9,7 +9,7 @@ def index():
         print(rates)
         model1 = joblib.load("regression_DBS")
         r1 = model1.predict([[rates]])
-        model2 = joblib.load("tree_DBS")
+        model2 = joblib.load("Tree")
         r2 = model2.predict([[rates]])
         return(render_template("index.html",result1=r1,result2=r2))
     else:
