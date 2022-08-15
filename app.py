@@ -16,4 +16,4 @@ def index():
     else:
         return(render_template('index.html', result1 = 'waiting', result2 = 'waiting'))
 if __name__ == '__main__':
-    app.run()
+    app.run(host = '127.0.0.1', port = int('1111'))
